@@ -39,7 +39,7 @@ def list_notes() -> str:
     notes = _load_notes()
     if not notes:
         return "No notes found."
-    return "\n".join(f"{i+1}. {note}" for i, note in enumerate(notes, start=1))
+    return "\n".join(f"{i}. {note}" for i, note in enumerate(notes, start=1))
 
 TOOLS =[
     {
